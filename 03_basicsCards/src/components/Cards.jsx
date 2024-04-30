@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Cards({userName, btnTxt="vist me", img="https://images.unsplash.com/photo-1564287531351-815cc2d36011?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2FyYmFsYXxlbnwwfHwwfHx8MA%3D%3D"}) {
+function Cards({userName, details ,btnTxt="vist me", img, extraTxt="terms and contions applied"}) {
   return (
     <div className="relative h-[400px] w-[300px] rounded-md">
         <img
@@ -12,11 +12,12 @@ function Cards({userName, btnTxt="vist me", img="https://images.unsplash.com/pho
         <div className="absolute bottom-4 left-4 text-left">
           <h1 className="text-lg font-semibold text-white">{userName}</h1>
           <p className="mt-2 text-sm text-gray-300">
-           Heaven on the Earth
+           {details}
           </p>
           <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold bg-gray-400">
-            {btnTxt}
+          {btnTxt}
           </button>
+          <p className='text-slate-600 mr-20'>{extraTxt}</p>
         </div>
       </div>
   )

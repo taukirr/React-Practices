@@ -4,7 +4,7 @@ import {InputBox} from './Components/Index'
 
 function App() {
 
-  const [amount, setAmount] = useState("1")
+  const [amount, setAmount] = useState("")
   const [from , setFrom] = useState("usd")
   const [to , setTo] = useState("inr")
   const [convtAmount, setConvtAmount] = useState("")

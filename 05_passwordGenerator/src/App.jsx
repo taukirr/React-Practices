@@ -1,8 +1,7 @@
 import { useState, useCallback, useEffect, useRef} from 'react'
-
-
+ 
 function App() {
-  const [len, setLen] = useState(6)
+  const [len, setLen] = useState(8)
   const [num, setNum] = useState(false)
   const [char, setChar] = useState(false)
   const [pass, setPass] = useState("")
